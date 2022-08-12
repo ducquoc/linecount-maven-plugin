@@ -236,15 +236,15 @@
     </developers>
 
     <issueManagement>
-        <url>https://gitlab.com/ducquoc/dq-protected/-/issues</url>
+        <url>https://gitlab.com/ducquoc/linecount-maven-plugin/-/issues</url>
         <system>GitLab Issues</system>
     </issueManagement>
     <mailingLists>
         <mailingList><name>dqonline@ducquoc.net</name></mailingList>
     </mailingLists>
     <scm>
-        <url>https://bitbucket.org/ducquoc/dq-training</url>
-        <connection>scm:git:https://bitbucket.org/ducquoc/dq-training.git</connection>
+        <url>https://github.com/ducquoc/linecount-maven-plugin</url>
+        <connection>scm:git:https://github.com/ducquoc/linecount-maven-plugin</connection>
     </scm>
 
     <!--

@@ -44,8 +44,16 @@ with plugins pre-configured in `pom.xml` (commented).
 When the commented section in `pom.xml` are un-commented, those can be run at root project similar to above,
 or can also be run mvn pointing to the pom file
 ```
-  $ ./mvnw net.ducquoc:linecount-maven-plugin:1.4.8:linecount -DpresentNonCode=true -f jdownloader-dtest/pom.xml
-  $ ./mvnw net.ducquoc:linecount-maven-plugin:1.4.8:linecount -DpresentNonCode=true -f java-dtest/pom.xml
+  $ cd examples-lc
+  $ ../mvnw net.ducquoc:linecount-maven-plugin:1.4.8:linecount -DpresentNonCode=true -f java-dtest/pom.xml
+  $ cd jdownloader-dtest
+  $ ../../mvnw net.ducquoc:linecount-maven-plugin:1.4.8:linecount -DpresentNonCode=true -f pom.xml
+```
+
+There are some parameters that can be configured in plugin configuration section in `pom.xml` , 
+and can also be overriden by Java system property: `presentNonCode`, `display`, etc...
+```
+-DpresentNonCode=true -Ddisplay=true 
 ```
 
 #### References
