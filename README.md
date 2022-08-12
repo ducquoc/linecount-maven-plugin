@@ -15,7 +15,7 @@ Build the project, install the artifact/plugin to local repository (or deploy to
 
 See sample below.
 
-#### Samples
+### Samples
 
 Current version is 1.4.8
 
@@ -35,8 +35,10 @@ Given the plugin exists (built and found in repo), plugin can be run on this pro
   $ mvn net.ducquoc:linecount-maven-plugin:1.4.8:linecount -DpresentNonCode=true
   $ ./mvnw net.ducquoc:linecount-maven-plugin:linecount -DpresentNonCode=true
 ```
+Be aware of the version `1.4.8` must be existing in local repository (or downloadable from Internet repos).
 
-There are 2 sub-folders: "java-dtest" and "jdownloader-dtest", which are maven projects 
+##### examples-lc
+There are 2 sub-folders: "java-dtest" and "jdownloader-dtest" in `examples-lc` folder, which are maven projects 
 with plugins pre-configured in `pom.xml` (commented).
 
 When the commented section in `pom.xml` are un-commented, those can be run at root project similar to above,
@@ -48,9 +50,13 @@ or can also be run mvn pointing to the pom file
 
 #### References
 
+https://gitlab.com/ducquoc/linecount-maven-plugin
+
+https://github.com/ducquoc/fresher-training
+
 https://bitbucket.org/ducquoc/dq-training
 
 https://ducquoc.github.io/
 
-Gradle plugin (similarly): TBU
+Gradle plugin (similarly): TBU (currently Groovy script is not running well with the plugin, not integrated well with CI/CD Jenkins, etc...)
 
