@@ -31,10 +31,10 @@ public class PluginEngineTest extends AbstractMojo {
 
         Assert.assertEquals("Trim common package name - failure", commonExpected, commonActual);
     }
-/*
+
     @Test
     public void testCountLines() {
-        Path baseDir = Paths.get(new File(".").getAbsolutePath(), "java-dtest").normalize();
+        Path baseDir = Paths.get(new File(".").getPath(), "examples-lc", "java-dtest").normalize();
         Path resDir = Paths.get(".", "src/test/resources").normalize();
         String srcMain = "src";
         String fileExt = "java";
@@ -77,7 +77,7 @@ public class PluginEngineTest extends AbstractMojo {
             getLog().error(mojoEx.getMessage());
         }
     }
-*/
+
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
         // not used
